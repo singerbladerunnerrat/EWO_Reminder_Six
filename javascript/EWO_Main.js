@@ -33,7 +33,7 @@ function EWO_Main_Function()
 	EWO_Sort_Array_Function();
 	EWO_Build_Output_Function();
 
-	window.setInterval(EWO_Build_Output_Function, 15000);
+	window.setInterval(EWO_Build_Output_Function, 30000);
 	
 	console.log("Exiting " + EWO_Caller);
 }
