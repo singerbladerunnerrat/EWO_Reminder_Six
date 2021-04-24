@@ -1,6 +1,6 @@
 "use strict";
 
-function EWO_Delete_Button_Function()
+function EWO_Edit_Button_Function()
 {
     "use strict";
 
@@ -11,12 +11,10 @@ function EWO_Delete_Button_Function()
 
 	console.log("Entering " + EWO_Caller + " - " + document.lastModified);
 
-	EWO_Reminder_Six_Array.splice(arguments[0], 1);
-	EWO_Save_Array_Function();
-	EWO_Build_Output_Function();
+	document.querySelector("#EWO_Title_One_ID").value = EWO_Reminder_Six_Array[arguments[0]].EWO_Title_One;
+	document.querySelector("#EWO_Title_Two_ID").value = EWO_Reminder_Six_Array[arguments[0]].EWO_Title_Two;
 
 	EWO_Audio_Click.play();
-	
 	
 	console.log("Exiting " + EWO_Caller);
 }

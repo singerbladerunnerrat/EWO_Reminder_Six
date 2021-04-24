@@ -139,7 +139,7 @@ function EWO_Build_Output_Function()
 				{
 
 					EWO_Audio_Alarm.play();
-					//location.reload();
+					
 /*
 					// https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
 					var EWO_Audio = new Audio("EWO_Alarm_Sound.mp3");
@@ -312,7 +312,10 @@ function EWO_Build_Output_Function()
 				EWO_HTML+= "<tbody>";
 					EWO_HTML+= "<tr>";
 						EWO_HTML+= "<td>";
-							EWO_HTML+= "<button type='button' onclick='EWO_RestartButtonFunction(" + EWO_For_Counter_One + ");'>Restart</button>";
+							EWO_HTML+= "<button type='button' onclick='EWO_Edit_Button_Function(" + EWO_For_Counter_One + ");'>Edit</button>";
+
+							EWO_HTML+= "<span style='margin-left:1em'></span>";
+							EWO_HTML+= "<button type='button' onclick='EWO_Restart_Button_Function(" + EWO_For_Counter_One + ");'>Restart</button>";
 		if (!EWO_Saved)
 		{
 							EWO_HTML+= "<span style='margin-left:1em'></span>";

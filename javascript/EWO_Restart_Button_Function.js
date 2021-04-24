@@ -1,6 +1,6 @@
 "use strict";
 
-function EWO_RestartButtonFunction()
+function EWO_Restart_Button_Function()
 {
     "use strict";
 
@@ -24,7 +24,7 @@ function EWO_RestartButtonFunction()
 	EWO_Build_Output_Function();
 
 	EWO_Audio_Click.play();
-	//location.reload();
+	
 	
 	console.log("Exiting " + EWO_Caller);
 }

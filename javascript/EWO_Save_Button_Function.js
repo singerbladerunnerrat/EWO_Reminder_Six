@@ -19,7 +19,7 @@ function EWO_Save_Button_Function()
 	EWO_Build_Output_Function();
 
 	EWO_Audio_Click.play();
-	//location.reload();
+	
 	
 	console.log("Exiting " + EWO_Caller);
 }
