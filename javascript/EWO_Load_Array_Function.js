@@ -11,7 +11,7 @@ function EWO_Load_Array_Function()
 
 	console.log("Entering " + EWO_Caller + " - " + document.lastModified);
 	
-	EWO_Reminder_Six_Array = JSON.parse(window.localStorage.getItem("EWO_Reminder_Array"));
+	EWO_Reminder_Six_Array = JSON.parse(window.localStorage.getItem("EWO_Reminder_Six_Array"));
 
 	if (EWO_Reminder_Six_Array === null)
 	{
