@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>EWO_Reminder_Five</title>
+
+<!--
+		<link rel="shortcut icon" href="https://singerbladerunnerrat.github.io/Reminders_3/favicon.ico">
+-->
+		<link rel="stylesheet" href="css/EWO_CSS.css">
+
+		<script src="javascript/EWO_At_Functions.js"></script>
+		<script src="javascript/EWO_Build_Output_Function.js"></script>
+		<script src="javascript/EWO_Clear_All_Data_Button_Function.js"></script>
+		<script src="javascript/EWO_Clear_Form_Function.js"></script>
+		<script src="javascript/EWO_Delete_Button_Function.js"></script>
+		<script src="javascript/EWO_Error_Function.js"></script>
+		<script src="javascript/EWO_In_Functions.js"></script>
+		<script src="javascript/EWO_Load_Array_Function.js"></script>
+		<script src="javascript/EWO_Main.js"></script>
+		<script src="javascript/EWO_Restart_Button_Function.js"></script>
+		<script src="javascript/EWO_Save_Array_Function.js"></script>
+		<script src="javascript/EWO_Save_Button_Function.js"></script>
+		<script src="javascript/EWO_Send_HTML_Body_To_Console_Function.js"></script>
+		<script src="javascript/EWO_Sort_Array_Function.js"></script>
+		<script src="javascript/EWO_Submit_Button_Function.js"></script>
+	</head>
+	
+	<body>
+		<hr>
+		
+		<span>Title</span><br>
+		<input type="text" id="EWO_Title_One_ID" name="EWO_Title_One_ID" size="40"><br>
+		<span>Category</span><br>
+		<input type="text" id="EWO_Title_Two_ID" name="EWO_Title_Two_ID" size="40"><br>
+		<br>
+
+		<span>Time</span><br>
+		<input type="radio" id="EWO_In_ID" name="qqq" value="in" checked>in<br>
+		<table>
+			<tbody>
+				<tr>
+					<td colspan="2" style="text-align:center">Days</td>
+					
+					<td colspan="2" style="text-align:center">Hours</td>
+
+					<td colspan="2" style="text-align:center">Minutes</td>
+
+					<td colspan="2" style="text-align:center">Seconds</td>
+				</tr>
+				<tr>
+					<td><button type="button" onclick="EWO_In_Days_Increment_Function(10)">&#x1f53c;<br>10</button></td>
+					<td><button type="button" onclick="EWO_In_Days_Increment_Function(1)">&#x1f53c;<br>1</button></td>
+
+					<td><button type="button" onclick="EWO_In_Hours_Increment_Function(10)">&#x1f53c;<br>10</button></td>
+					<td><button type="button" onclick="EWO_In_Hours_Increment_Function(1)">&#x1f53c;<br>1</button></td>
+
+					<td><button type="button" onclick="EWO_In_Minutes_Increment_Function(10)">&#x1f53c;<br>10</button></td>
+					<td><button type="button" onclick="EWO_In_Minutes_Increment_Function(1)">&#x1f53c;<br>1</button></td>
+
+					<td><button type="button" onclick="EWO_In_Seconds_Increment_Function(10)">&#x1f53c;<br>10</button></td>
+					<td><button type="button" onclick="EWO_In_Seconds_Increment_Function(1)">&#x1f53c;<br>1</button></td>
+				</tr>
+				<tr>
+					<td id="EWO_In_Days_ID" colspan="2" style="text-align:center">0</td>
+
+					<td id="EWO_In_Hours_ID" colspan="2" style="text-align:center">0</td>
+
+					<td id="EWO_In_Minutes_ID" colspan="2" style="text-align:center">0</td>
+
+					<td id="EWO_In_Seconds_ID" colspan="2" style="text-align:center">0</td>
+				</tr>
+				<tr>
+					<td><button type="button" onclick="EWO_In_Days_Decrement_Function(10)">&#x1f53d;<br>10</button></td>
+					<td><button type="button" onclick="EWO_In_Days_Decrement_Function(1)">&#x1f53d;<br>1</button></td>
+
+					<td><button type="button" onclick="EWO_In_Hours_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_In_Hours_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_In_Minutes_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_In_Minutes_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_In_Seconds_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_In_Seconds_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<input type="radio" id="EWO_At_ID" name="qqq" value="at">at<br>
+		<table>
+			<tbody>
+				<tr>
+					<td colspan="2" style="text-align:center">Month</td>
+
+					<td colspan="2" style="text-align:center">Day</td>
+
+					<td colspan="2" style="text-align:center">Hour</td>
+
+					<td colspan="2" style="text-align:center">Minute</td>
+				</tr>
+				<tr>
+					<td><button type="button" onclick="EWO_At_Month_Increment_Function(10)"><span>&#x1f53c;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Month_Increment_Function(1)"><span>&#x1f53c;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_At_Day_Increment_Function(10)"><span>&#x1f53c;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Day_Increment_Function(1)"><span>&#x1f53c;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_At_Hour_Increment_Function(10)"><span>&#x1f53c;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Hour_Increment_Function(1)"><span>&#x1f53c;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_At_Minute_Increment_Function(10)"><span>&#x1f53c;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Minute_Increment_Function(1)"><span>&#x1f53c;<br>1</span></button></td>
+				</tr>
+				<tr>
+					<td id="EWO_At_Month_ID" colspan="2" style="text-align:center">0</td>
+
+					<td id="EWO_At_Day_ID" colspan="2" style="text-align:center">0</td>
+
+					<td id="EWO_At_Hour_ID" colspan="2" style="text-align:center">0</td>
+
+					<td id="EWO_At_Minute_ID" colspan="2" style="text-align:center">0</td>
+				</tr>
+				<tr>
+					<td><button type="button" onclick="EWO_At_Month_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Month_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_At_Day_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Day_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_At_Hour_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Hour_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+
+					<td><button type="button" onclick="EWO_At_Minute_Decrement_Function(10)"><span>&#x1f53d;<br>10</span></button></td>
+					<td><button type="button" onclick="EWO_At_Minute_Decrement_Function(1)"><span>&#x1f53d;<br>1</span></button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<span style="margin-left:1em"></span><button type="button" onclick="EWO_Submit_Button_Function()">Start</button>
+
+<!--
+		<span style="margin-left:2em"></span><button type="button" onclick="EWO_Fresh_Save_Button_Function()">Save</button>
+-->
+
+		<span style="margin-left:1em"></span><button type="button" onclick="EWO_Clear_Form_Function()">Clear</button>
+
+		<hr>
+
+		<div>
+			<span>Error Output:</span>
+		</div>
+		<div>
+			<span id="EWO_Error_Output_ID" style="margin-left:2em"></span>
+		</div>
+
+		<hr>
+
+		<div>
+			<span>Overdue:</span>
+		</div>
+		<div style="background:#ff8888">
+			<span id="EWO_Overdue_ID"></span>
+		</div>
+
+		<hr>
+
+		<div>
+			<span>Output:</span>
+		</div>
+		<div style="background:#88ff88">
+			<span id="EWO_Output_ID"></span>
+		</div>
+
+		<hr>
+
+		<div>
+			<span>Saved:</span>
+		</div>
+		<div style="background:#ffff88">
+			<span id="EWO_Saved_ID"></span>
+		</div>
+
+		<hr>
+
+		<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fsingerbladerunnerrat.github.io%2FReminders%2F">Nu Html Checker</a><br>
+		<a href="https://validator.w3.org/i18n-checker/check?uri=https://singerbladerunnerrat.github.io/Reminders/#validate-by-uri+">W3C I18n Checker</a>
+
+		<hr>
+
+		<div>
+			<span >Debug Info:</span>
+		</div>
+		<div>
+			<span style="margin-left:2em">Your screen resolution is: </span>
+			<span id="EWO_Width_ID"></span>
+			<span>x</span>
+			<span id="EWO_Height_ID"></span><br>
+
+			<span id="EWO_Debug_Info__ID" style="margin-left:2em"></span>
+		</div>
+
+		<script>
+			document.querySelector("#EWO_Width_ID").innerHTML = screen.width;
+			document.querySelector("#EWO_Height_ID").innerHTML = screen.height;
+		</script>
+
+		<hr>
+
+		<button type="button" onclick="EWO_Clear_All_Data_Button_Function()">Clear All Data</button><br>
+
+		<hr>
+
+		<script>
+			EWO_Main_Function();
+		</script>
+	</body>
+</html>
